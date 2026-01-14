@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+llm_env/
+env/
+venv/
+.env
+
+# Output Data (Keep repo light)
+outputs/
+*.xlsx
+*.csv
+
+# System
+.DS_Store
+
+# Data Directory (Exclude heavy files)
+data/*
+!data/prompts.json

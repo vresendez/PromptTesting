@@ -1,0 +1,47 @@
+## Functional Requirements (from the provided PROTECT-CHILD summary)
+
+1. **Federated analysis capability** across hospitals/registries/research centres without centralising raw data.  
+2. **Privacy-preserving data integration** for sensitive paediatric transplant clinical and genomic data.  
+3. **Interoperability and harmonisation** of heterogeneous data (clinical, genomic, registry) aligned with international standards (e.g., HL7 and metadata standards).  
+4. **Cross-site analytics enablement**, including machine-learning and predictive modelling performed on distributed datasets.  
+5. **Clinical decision support enablement** by making results usable for evidence-based and personalised decisions in paediatric transplantation.  
+6. **Governance workflows support**, involving clinicians, legal experts, patients, and policy makers in how data are accessed and reused.  
+7. **Controlled data reuse for research**, enabling scalable reuse of rare-disease transplant data across Europe (without exposing sensitive patient information).
+
+## Non-Functional Requirements (qualities/constraints stated or implied)
+
+1. **GDPR and EHDS alignment** as a core compliance constraint.  
+2. **Strong security and privacy** (trusted environment; avoidance of raw data exposure/centralisation).  
+3. **Legal and ethical compliance by design**, reflecting “strong governance and compliance” and sensitive paediatric context.  
+4. **Interoperability as a system-wide quality**, not only per-feature (standards alignment across sources).  
+5. **Trustworthiness** of the environment (explicitly described as “trusted”).  
+6. **Scalability for European-wide reuse**, given the goal of cross-border, multi-institution participation and rare-disease data reuse.  
+7. **Accessibility/utility for multi-stakeholder users** (clinicians, legal experts, patients, policy makers) so the environment can be practically used in co-designed workflows.
+
+---
+
+## User Stories (Pediatric Gastroenterology & Hepatology / Pediatric Transplantation perspective)
+
+1. **As a pediatric transplant clinician,** I want to run analyses across distributed European paediatric transplant datasets **without moving or centralising raw patient data**, so that I can learn from larger cohorts while respecting privacy constraints.
+
+2. **As a pediatric hepatology specialist,** I want clinical and genomic transplant-related data from different institutions to be **integrated in a privacy-preserving way**, so that I can use combined evidence without exposing sensitive patient information.
+
+3. **As a clinician supporting rare paediatric transplants,** I want the platform to **harmonise heterogeneous data formats and standards** across hospitals and registries, so that multi-centre results are comparable and usable.
+
+4. **As a pediatric transplant clinician,** I want the system to support **interoperability aligned with international standards (e.g., HL7 and metadata standards)**, so that my hospital’s data can participate in cross-border analyses without bespoke one-off mappings.
+
+5. **As a pediatric hepatology and transplant clinician,** I want to enable **machine-learning and predictive modelling across federated datasets**, so that we can identify predictors of transplant success or complications using larger, diverse populations.
+
+6. **As a clinician making high-stakes transplant decisions,** I want **analytics outputs that support evidence-based and personalised clinical decision-making**, so that treatment strategies can be better tailored to individual paediatric patients.
+
+7. **As a pediatric transplant clinician working under strict regulation,** I want the platform to operate in a **trusted environment aligned with GDPR and EHDS**, so that cross-border collaboration is legally compliant and ethically acceptable.
+
+8. **As a clinician collaborating with researchers,** I want the infrastructure to support **reuse of rare-disease transplant data at scale across Europe**, so that research questions can be answered despite small local datasets.
+
+9. **As a pediatric transplant clinician,** I want governance processes that **actively involve clinicians, legal experts, patients, and policy makers**, so that data access and reuse decisions are transparent, accountable, and trusted.
+
+10. **As a pediatric hepatology specialist,** I want the system to **reduce privacy and security risks by avoiding raw data exposure**, so that participation does not increase institutional or patient risk while still enabling meaningful analysis.
+
+11. **As a clinician managing complex, sensitive paediatric cases,** I want clear constraints and controls that ensure **ethical and legal requirements are met throughout the analysis lifecycle**, so that the use of clinical/genomic data remains responsible.
+
+12. **As a pediatric transplant clinician participating in a multi-centre network,** I want the platform to be **scalable and usable across many European institutions**, so that adding new sites increases collective learning without redesigning the infrastructure.

@@ -1,0 +1,46 @@
+### **User Stories for PROTECT-CHILD Project (Biostatistician & Clinical Trials Coordinator Perspective)**  
+
+As a **Biostatistician and Clinical Trials Coordinator**, I need to ensure that the PROTECT-CHILD platform supports secure, privacy-preserving statistical analysis of distributed pediatric transplant data while maintaining compliance with GDPR and EHDS. Below are the user stories derived from the project requirements:  
+
+#### **Functional Requirements (What the system must do)**  
+1. **Federated Data Analysis**  
+   - *As a biostatistician, I want to perform statistical analyses on distributed pediatric transplant datasets without raw data centralization, so that I can maintain patient privacy while extracting meaningful insights.*  
+
+2. **Data Harmonization & Standardization**  
+   - *As a biostatistician, I want the platform to automatically align heterogeneous clinical and genomic data with HL7 and other metadata standards, so that I can integrate datasets from different European institutions seamlessly.*  
+
+3. **Privacy-Preserving Machine Learning**  
+   - *As a biostatistician, I want to apply federated learning and differential privacy techniques when running predictive models, so that I can identify risk factors for transplant complications without exposing individual patient data.*  
+
+4. **Clinical Decision Support Integration**  
+   - *As a clinical trials coordinator, I want the platform to generate risk stratification reports based on federated analyses, so that clinicians can make evidence-based decisions for pediatric transplant patients.*  
+
+5. **Audit & Compliance Logging**  
+   - *As a clinical trials coordinator, I want all data access and analysis activities to be logged with GDPR compliance, so that I can ensure ethical and legal adherence in multicenter studies.*  
+
+6. **Interoperability with Registries & EHRs**  
+   - *As a biostatistician, I want the platform to connect securely with hospital registries and electronic health records (EHRs), so that I can access up-to-date transplant outcomes data for longitudinal studies.*  
+
+7. **Customizable Statistical Workflows**  
+   - *As a biostatistician, I want to define and execute custom statistical models (e.g., survival analysis, mixed-effects models) on federated data, so that I can answer complex research questions without data movement.*  
+
+#### **Non-Functional Requirements (System Qualities & Constraints)**  
+8. **Data Security & Access Control**  
+   - *As a biostatistician, I want role-based access control (RBAC) to ensure only authorized users can query or analyze sensitive pediatric transplant data, so that patient confidentiality is maintained.*  
+
+9. **High Availability & Performance**  
+   - *As a clinical trials coordinator, I want the federated analysis infrastructure to be highly available with minimal latency, so that multicenter studies are not delayed by technical failures.*  
+
+10. **Ethical & Legal Compliance**  
+   - *As a clinical trials coordinator, I want the platform to enforce GDPR and EHDS requirements by design, so that all data processing activities are legally compliant.*  
+
+11. **Usability for Non-Technical Users**  
+   - *As a biostatistician, I want an intuitive interface for clinicians to request statistical analyses, so that they can obtain insights without needing deep technical expertise.*  
+
+12. **Scalability for Large-Scale Studies**  
+   - *As a biostatistician, I want the platform to handle increasing volumes of genomic and clinical data as more institutions join, so that statistical power improves over time.*  
+
+13. **Transparency & Reproducibility**  
+   - *As a biostatistician, I want all federated analyses to generate audit trails and reproducible scripts, so that research findings can be validated and peer-reviewed.*  
+
+These user stories ensure that PROTECT-CHILD meets the needs of biostatisticians and clinical trials coordinators while adhering to privacy, security, and regulatory constraints.

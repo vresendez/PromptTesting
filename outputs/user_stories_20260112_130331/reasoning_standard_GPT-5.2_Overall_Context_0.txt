@@ -1,0 +1,59 @@
+1. **As a paediatric transplant clinician,** I want to query outcome predictors across multiple European centres without moving raw patient data, **so that** I can make better evidence-based decisions for rare transplant cases.
+
+2. **As a clinical researcher,** I want to run federated statistical analyses on distributed clinical and genomic datasets, **so that** I can increase sample size and study power while respecting privacy constraints.
+
+3. **As a data protection officer (DPO),** I want the platform to enforce GDPR-compliant processing (purpose limitation, minimisation, lawful basis, and accountability), **so that** cross-border analyses are legally defensible.
+
+4. **As a hospital data custodian,** I want to keep patient-level data within my institution and only share approved derived outputs, **so that** I can participate in collaboration without relinquishing control of sensitive data.
+
+5. **As a governance board member,** I want to define and approve policies for who can run which analyses on which datasets, **so that** data access and reuse are ethically and organisationally controlled.
+
+6. **As a clinician,** I want harmonised clinical variables (e.g., diagnoses, procedures, outcomes) across sites using agreed standards, **so that** pooled analyses are comparable and clinically meaningful.
+
+7. **As a genomics scientist,** I want genomic data and metadata to be represented using interoperable schemas and standard annotations, **so that** multi-site genomic analyses are consistent and reproducible.
+
+8. **As a registry manager,** I want to map registry data fields into a common data model and metadata catalogue, **so that** registry data can be discovered and reused in federated studies.
+
+9. **As a data engineer at a participating centre,** I want tooling to transform local datasets into the agreed interoperable format (e.g., HL7-aligned structures and metadata standards), **so that** onboarding is feasible without re-building our systems.
+
+10. **As a researcher,** I want a searchable catalogue of available datasets, variables, and data quality indicators across centres, **so that** I can design feasible studies before requesting execution.
+
+11. **As a researcher,** I want to submit an analysis request that specifies the cohort, variables, and method to be run federatedly, **so that** the same protocol can execute consistently across sites.
+
+12. **As a site administrator,** I want to review and approve incoming analysis requests against local constraints and policies, **so that** we only run analyses that match our permissions and capabilities.
+
+13. **As a platform operator,** I want federated computation to run “bring-the-algorithm-to-the-data” workflows, **so that** models/queries execute locally and only permitted outputs leave the site.
+
+14. **As a machine-learning researcher,** I want to train predictive models across distributed datasets (federated learning), **so that** models benefit from European-scale data without centralising patient records.
+
+15. **As a clinician,** I want risk stratification outputs (e.g., predicted complication risk) derived from validated models, **so that** I can tailor treatment plans to individual paediatric patients.
+
+16. **As a clinical team member,** I want model outputs to include interpretability information (e.g., key contributing factors and uncertainty), **so that** I can understand and trust the decision support.
+
+17. **As an ethics committee representative,** I want study execution to require documented ethical approvals and usage conditions, **so that** the platform operates within accepted ethical boundaries.
+
+18. **As a DPO,** I want audit trails of data processing activities (who, what, when, why, and outputs), **so that** compliance and accountability requirements are met.
+
+19. **As a security officer,** I want strong identity and access management (role-based access control and least privilege), **so that** only authorised users can access tools, workflows, and results.
+
+20. **As a hospital IT administrator,** I want secure deployment options that fit local infrastructure constraints, **so that** we can participate without violating internal security policies.
+
+21. **As a researcher,** I want automatic checks that prevent exporting disallowed information (e.g., overly granular results that could re-identify patients), **so that** privacy risks are reduced.
+
+22. **As a platform operator,** I want encrypted communication and secure execution environments, **so that** data and computations are protected in transit and during processing.
+
+23. **As a project coordinator,** I want the platform to align with EHDS principles for secondary use and interoperability, **so that** the project integrates with emerging European health-data policy frameworks.
+
+24. **As a participating centre,** I want clear data-sharing agreements and standard operating procedures embedded into the workflow, **so that** collaboration is operationally consistent across countries.
+
+25. **As a clinician-researcher,** I want versioned analysis protocols and reproducible execution records, **so that** results can be validated, compared over time, and published responsibly.
+
+26. **As a data quality manager,** I want data validation and quality reporting (completeness, consistency, missingness) per site and variable, **so that** we can improve harmonisation and interpret results correctly.
+
+27. **As a patient/parent representative,** I want transparency about how data are used and protected within the federated environment, **so that** trust is maintained and concerns can be addressed.
+
+28. **As a legal expert,** I want the platform to support cross-border processing requirements (e.g., roles of controllers/processors and lawful basis documentation), **so that** multinational collaboration remains compliant.
+
+29. **As a researcher,** I want access to aggregated, privacy-preserving summary statistics across centres, **so that** I can perform feasibility assessments without accessing sensitive individual-level data.
+
+30. **As a platform operator,** I want high availability and monitoring of federated nodes and workflow execution, **so that** analyses complete reliably across a distributed European network.

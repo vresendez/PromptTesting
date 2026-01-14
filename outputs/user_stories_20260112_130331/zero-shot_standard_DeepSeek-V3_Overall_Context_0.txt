@@ -1,0 +1,46 @@
+Here is a set of user stories for the **PROTECT-CHILD** project, categorized by functional and non-functional requirements:  
+
+### **Functional Requirements (User Stories)**  
+
+1. **Data Integration & Harmonization**  
+   - As a **clinician**, I want to access harmonized clinical and genomic data from multiple European hospitals in a standardized format (e.g., HL7, FHIR) so that I can analyze patient records consistently.  
+   - As a **researcher**, I want to query federated datasets using common metadata standards so that I can perform cross-institutional analyses without manual data conversion.  
+
+2. **Privacy-Preserving Federated Analysis**  
+   - As a **data scientist**, I want to run machine learning models on distributed datasets without raw data leaving its original location so that I can comply with GDPR and protect patient privacy.  
+   - As a **hospital administrator**, I want to contribute data to the federated network while retaining full control over access permissions so that I can ensure compliance with local regulations.  
+
+3. **Clinical Decision Support**  
+   - As a **paediatric transplant specialist**, I want to receive AI-driven risk predictions based on aggregated European data so that I can make better-informed treatment decisions.  
+   - As a **transplant coordinator**, I want to compare a patient’s genomic profile with anonymized outcomes from similar cases so that I can recommend personalized post-transplant care.  
+
+4. **Governance & Compliance**  
+   - As a **legal officer**, I want to audit all data access and processing activities in the system so that I can ensure compliance with GDPR and EHDS.  
+   - As an **ethics committee member**, I want to review and approve data-sharing agreements before they are activated so that I can enforce ethical guidelines.  
+
+5. **User Access & Authentication**  
+   - As a **healthcare professional**, I want to authenticate via a secure, role-based access system so that I can only see data relevant to my permissions.  
+   - As a **patient/parent**, I want to grant or revoke consent for my child’s data to be used in research so that I can maintain control over sensitive information.  
+
+### **Non-Functional Requirements (System Qualities)**  
+
+6. **Security & Privacy**  
+   - As a **system architect**, I want all data transfers to be encrypted (e.g., TLS, homomorphic encryption) so that patient information remains secure in transit.  
+   - As a **security auditor**, I want the system to log all access attempts and data queries so that I can detect and investigate potential breaches.  
+
+7. **Interoperability**  
+   - As a **data engineer**, I want the system to support common biomedical standards (e.g., HL7, OMOP, GA4GH) so that it can integrate with existing hospital systems.  
+
+8. **Performance & Scalability**  
+   - As a **researcher**, I want distributed queries to return results within an acceptable timeframe (e.g., <1 min for aggregated statistics) so that I can work efficiently.  
+   - As a **system administrator**, I want the infrastructure to scale dynamically with increasing data volumes so that performance remains stable.  
+
+9. **Usability & Accessibility**  
+   - As a **clinician**, I want an intuitive dashboard that visualizes risk predictions and patient comparisons so that I can interpret results quickly.  
+   - As a **non-technical user**, I want clear consent management interfaces so that I can easily understand and control data-sharing permissions.  
+
+10. **Compliance & Auditability**  
+   - As a **regulatory body**, I want the system to enforce GDPR’s "right to be forgotten" so that patient data can be deleted upon request.  
+   - As a **project coordinator**, I want automated compliance reports to be generated for EHDS audits so that legal obligations are met efficiently.  
+
+This set of user stories ensures that PROTECT-CHILD meets both its **functional objectives** (data integration, federated analysis, decision support) and **non-functional requirements** (security, compliance, usability). Would you like any refinements or additional details?

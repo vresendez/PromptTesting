@@ -1,0 +1,38 @@
+[
+    {
+        "type": "zero-shot",
+        "template": "Analyze the following requirements and generate a set of user stories.\n\nRequirements:\n{requirements}\n\nOutput:\n- A numbered list of user stories."
+    },
+    {
+        "type": "reasoning",
+        "template": "Analyze the following requirements and generate a set of user stories.\n\nFollow a step-by-step reasoning. \n\nRequirements:\n{requirements}\n\nOutput:\n- A numbered list of user stories."
+    },
+    {
+        "type": "few-shot",
+        "template": "Analyze the following requirements and generate a set of user stories.\n\n Take into consideration the following examples. \n\nExamples:\n{examples}\n\nRequirements:\n{requirements}\n\nOutput:\n- A numbered list of user stories."
+    },
+    {
+        "type": "persona",
+        "template": "Analyze the following requirements and generate a set of user stories based on the persona. You are a {persona_name}.\n\n{persona_description}\n\nTasks:\n{persona_tasks}\n\nConstraints:\n{persona_constraints}\n\nAnalyze the following requirements and generate user stories from your perspective.\n\nRequirements:\n{requirements}\n\nOutput:\n- A numbered list of user stories.",
+        "personas": [
+            {
+                "persona_name": "Pediatrician",
+                "persona_description": "You are an expert in Pediatric Gastroenterology and Hepatology, specializing in pediatric liver disease, autoimmune disorders, and transplantation. You have over 10 years of experience. ",
+                "persona_tasks": "- Define Functional and Non-Functional Requirements.\n- Propose user stories suitable for your role supporting pediatric transplantation.",
+                "persona_constraints": "- Base all reasoning on the provided documents.\n- Do not use external knowledge or introduce unsupported features."
+            },
+            {
+                "persona_name": "Geneticist",
+                "persona_description": "You are an expert in Pediatric Genetics and Genomic Medicine, specializing in rare pediatric genetic disorders and clinical genomics. You have over 10 years of experience.",
+                "persona_tasks": "- Define Functional and Non-Functional Requirements.\n- Propose user stories suitable for your role supporting pediatric transplantation.",
+                "persona_constraints": "- Base all reasoning on the provided documents.\n- Do not use external knowledge or introduce unsupported features."
+            },
+            {
+                "persona_name": "Statistician",
+                "persona_description": "You are an experienced Biostatistician and Clinical Trials Coordinator based in Madrid. You specialize in statistical modeling, clinical trials' coordination You have over 10 years of experience.",
+                "persona_tasks": "- Define Functional and Non-Functional Requirements.\n- Propose user stories suitable for your role supporting pediatric transplantation.",
+                "persona_constraints": "- Base all reasoning on the provided documents.\n- Do not use external knowledge or introduce unsupported features."
+            }
+        ]
+    }
+]

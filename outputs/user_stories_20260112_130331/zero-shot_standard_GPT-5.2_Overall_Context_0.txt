@@ -1,0 +1,59 @@
+1. **As a paediatric transplant clinician,** I want to search and query a multi-centre dataset (without moving raw patient data), **so that** I can compare outcomes and identify relevant cohorts for clinical decision-making.
+
+2. **As a clinical researcher,** I want to run federated statistical analyses across multiple hospitals/registries, **so that** I can obtain robust results from rare, fragmented paediatric transplant datasets.
+
+3. **As a machine-learning scientist,** I want to train and validate predictive models in a federated environment, **so that** I can develop risk stratification tools without accessing identifiable or centralised raw data.
+
+4. **As a data custodian at a hospital,** I want to keep patient data locally while contributing to federated analyses, **so that** my institution can participate in cross-border research without breaching privacy or internal policies.
+
+5. **As a data manager,** I want to map local clinical, genomic, and registry datasets to agreed interoperability standards (e.g., HL7 and shared metadata), **so that** data from different sites can be analysed consistently.
+
+6. **As a genomic data specialist,** I want to link harmonised genomic data with clinical transplant records using privacy-preserving methods, **so that** genotype–phenotype analyses can be performed safely.
+
+7. **As a platform administrator,** I want to onboard new institutions (hospitals, registries, research centres) with clear technical and governance steps, **so that** the federated network can scale across Europe.
+
+8. **As a security officer,** I want strong authentication and role-based access control, **so that** only authorised users can access specific tools, workflows, and outputs.
+
+9. **As a privacy officer/DPO,** I want configurable privacy controls (e.g., minimisation, pseudonymisation support, output disclosure controls), **so that** analyses comply with GDPR and reduce re-identification risk.
+
+10. **As an ethics board representative,** I want governance rules that constrain which analyses are permitted and how results can be exported, **so that** research use remains ethically appropriate for paediatric contexts.
+
+11. **As a policy/compliance specialist,** I want the platform to align with EHDS requirements and cross-border legal constraints, **so that** data reuse can be conducted lawfully across EU member states.
+
+12. **As a clinician,** I want clinical decision-support outputs (e.g., risk scores, predictors of complications) derived from federated analytics, **so that** I can make safer and more personalised treatment choices.
+
+13. **As a researcher,** I want to discover what data exists at each site via standardised metadata (without seeing raw data), **so that** I can assess feasibility and design studies efficiently.
+
+14. **As a data steward,** I want data quality checks and harmonisation validation reports, **so that** I can detect missingness, inconsistencies, and standard-mapping errors before analyses run.
+
+15. **As a consortium governance lead,** I want auditable logging of user actions, analysis execution, and result access, **so that** accountability and traceability are ensured for sensitive paediatric data.
+
+16. **As a site IT engineer,** I want secure deployment options for the federated node within hospital infrastructure, **so that** participation does not introduce unacceptable cybersecurity or operational risk.
+
+17. **As a patient/parent representative,** I want transparent information about how data is used and protected (including federated analysis principles), **so that** trust is maintained and participation is informed.
+
+18. **As a legal expert,** I want support for documenting lawful basis, data processing purposes, and data-sharing arrangements, **so that** each participating institution can demonstrate GDPR compliance.
+
+19. **As a researcher,** I want to reuse validated analytic workflows (pipelines) across multiple studies, **so that** results are reproducible and comparable across sites and time.
+
+20. **As a clinician-researcher,** I want to stratify cohorts by rare transplant type and patient characteristics using harmonised variables, **so that** I can study predictors of success or complications in small subpopulations.
+
+21. **As a platform operator,** I want monitoring of federated jobs (status, failures, resource use), **so that** analyses complete reliably and issues can be resolved quickly.
+
+22. **As a security officer,** I want encrypted communication and secure key/certificate management between nodes, **so that** cross-site federation remains protected in transit and resistant to interception.
+
+23. **As a data custodian,** I want fine-grained control over which datasets and variables are available for which studies, **so that** local governance decisions are enforced per project and per user role.
+
+24. **As a clinical researcher,** I want aggregated, privacy-safe outputs (e.g., summary statistics, model parameters) with disclosure risk safeguards, **so that** I can publish findings without exposing individuals.
+
+25. **As a project coordinator,** I want a shared governance workflow for approving studies and federated analyses (including ethics and legal checks), **so that** collaboration is efficient while remaining compliant.
+
+26. **As a clinician,** I want the platform to be usable and accessible in routine clinical/research contexts, **so that** specialists across Europe can adopt it without extensive technical expertise.
+
+27. **As a patient safety stakeholder,** I want the platform to support continuous improvement by enabling longitudinal outcome analyses, **so that** transplant protocols can evolve based on evidence from Europe-wide data.
+
+28. **As a consortium member,** I want the infrastructure to be interoperable with existing hospital systems and registries, **so that** participation does not require replacing current tools and data sources.
+
+29. **As a research auditor,** I want versioning of datasets, mappings, and analytic pipelines, **so that** results can be reproduced and verified over the project’s 54-month lifecycle.
+
+30. **As a platform architect,** I want the system to avoid centralising raw sensitive data by design, **so that** privacy, trust, and legal compliance are core properties rather than add-ons.

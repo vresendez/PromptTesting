@@ -1,0 +1,50 @@
+### **User Stories for PROTECT-CHILD from a Pediatric Gastroenterologist & Hepatologist Perspective**  
+
+As a **Pediatric Gastroenterologist & Hepatologist specializing in pediatric liver disease, autoimmune disorders, and transplantation**, I need a secure, privacy-preserving, and interoperable data infrastructure to improve clinical decision-making for rare pediatric transplant cases. Below are the user stories derived from the PROTECT-CHILD project requirements:  
+
+#### **Functional Requirements (What the system must do)**  
+1. **Federated Data Access**  
+   - *As a pediatric transplant specialist, I want to securely query distributed datasets across European hospitals and registries without raw data centralization, so that I can access rare case data while complying with GDPR.*  
+
+2. **Privacy-Preserving Analytics**  
+   - *As a clinician, I want to run machine-learning models on federated datasets without exposing patient identities, so that I can identify risk factors for transplant complications while maintaining confidentiality.*  
+
+3. **Interoperable Data Standards**  
+   - *As a physician, I want clinical and genomic data to be harmonized using HL7 and metadata standards, so that I can integrate heterogeneous datasets for cross-border research.*  
+
+4. **Clinical Decision Support**  
+   - *As a transplant specialist, I want predictive models to analyze distributed datasets and provide personalized treatment recommendations, so that I can optimize post-transplant care for my patients.*  
+
+5. **Patient-Specific Risk Stratification**  
+   - *As a hepatologist, I want to compare my patient’s genomic and clinical profile against anonymized European datasets, so that I can assess graft rejection risks and adjust immunosuppression accordingly.*  
+
+6. **Ethical & Legal Compliance**  
+   - *As a clinician-researcher, I want the system to enforce GDPR and EHDS compliance by design, so that I can confidently use the platform without legal concerns.*  
+
+7. **Real-Time Data Updates**  
+   - *As a transplant physician, I want the latest registry and hospital data to be available for federated analysis, so that I can base decisions on the most recent evidence.*  
+
+#### **Non-Functional Requirements (System Qualities & Constraints)**  
+8. **Data Security & Access Control**  
+   - *As a user, I want role-based access control with strict authentication, so that only authorized clinicians and researchers can query sensitive pediatric transplant data.*  
+
+9. **System Usability & Accessibility**  
+   - *As a busy physician, I want an intuitive interface with minimal training required, so that I can efficiently retrieve insights without technical barriers.*  
+
+10. **High Availability & Reliability**  
+    - *As a clinician, I need the system to be available 24/7 with minimal downtime, so that I can access critical transplant data during emergencies.*  
+
+11. **Audit Trails & Transparency**  
+    - *As a responsible user, I want all data queries and model executions to be logged, so that compliance with ethical guidelines can be verified.*  
+
+12. **Scalability for Rare Disease Data**  
+    - *As a researcher, I want the infrastructure to handle increasing volumes of genomic and clinical data, so that rare pediatric transplant cases can be studied at scale.*  
+
+13. **Performance Optimization**  
+    - *As a user, I need federated queries to return results within acceptable timeframes, so that clinical decisions are not delayed.*  
+
+14. **Multi-Language Support**  
+    - *As a European clinician, I want the system to support multiple languages, so that non-English-speaking medical teams can use it effectively.*  
+
+### **Summary**  
+These user stories reflect the needs of a **pediatric transplant specialist** leveraging PROTECT-CHILD’s federated, privacy-preserving infrastructure to improve rare disease outcomes while adhering to strict ethical and legal standards. The system must balance **functionality (data access, analytics, decision support)** with **non-functional qualities (security, usability, compliance)** to be effective in real-world clinical practice.

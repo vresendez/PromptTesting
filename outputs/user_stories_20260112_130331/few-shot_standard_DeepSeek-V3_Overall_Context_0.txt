@@ -1,0 +1,114 @@
+Here is a set of user stories for the PROTECT-CHILD project, structured similarly to the provided examples:  
+
+---
+
+### **User Stories for PROTECT-CHILD**  
+
+#### **1. US #1.1 (PROTECT-CHILD, ENG) – Federated Data Integration**  
+**As a** Clinician or Researcher  
+**I want to** securely access and analyze distributed paediatric transplant data from multiple European institutions  
+**So that** I can derive insights without compromising patient privacy  
+
+**Acceptance criteria:**  
+- Data remains decentralized and is never fully centralized  
+- Access is granted only to authorized users with proper authentication  
+- Data is harmonized according to HL7/FHIR or other relevant standards  
+- Privacy-preserving techniques (e.g., federated learning, differential privacy) are applied  
+
+**Additional notes:**  
+- Compliance with GDPR and EHDS is mandatory  
+- Data access logs must be maintained for audit purposes  
+
+---  
+
+#### **2. US #1.2 (PROTECT-CHILD, ENG) – Data Harmonization & Standardization**  
+**As a** Data Manager  
+**I want to** convert heterogeneous clinical and genomic data into a standardized format  
+**So that** it can be interoperable across different institutions  
+
+**Acceptance criteria:**  
+- Supports multiple input formats (e.g., OMOP, HL7, FHIR, genomic data formats)  
+- Metadata is aligned with international standards  
+- A validation tool ensures compliance with PROTECT-CHILD’s data model  
+
+**Additional notes:**  
+- Transformation rules must be documented and version-controlled  
+
+---  
+
+#### **3. US #1.3 (PROTECT-CHILD, ENG) – Privacy-Preserving Analytics**  
+**As a** Researcher  
+**I want to** run machine learning models on distributed datasets without direct access to raw data  
+**So that** I can identify predictors of transplant success while preserving privacy  
+
+**Acceptance criteria:**  
+- Federated learning or secure multi-party computation (SMPC) is supported  
+- Models can be trained across multiple institutions without data leaving its source  
+- Results are aggregated and anonymized before sharing  
+
+**Additional notes:**  
+- Ethical approval must be obtained before running analyses  
+
+---  
+
+#### **4. US #1.4 (PROTECT-CHILD, ENG) – Role-Based Access Control**  
+**As a** System Administrator  
+**I want to** define and enforce access permissions based on user roles  
+**So that** only authorized personnel can view or analyze sensitive data  
+
+**Acceptance criteria:**  
+- Roles (e.g., clinician, researcher, data steward) are clearly defined  
+- Access levels are configurable per dataset  
+- Audit logs track all data access attempts  
+
+**Additional notes:**  
+- Must comply with GDPR’s principle of least privilege  
+
+---  
+
+#### **5. US #1.5 (PROTECT-CHILD, ENG) – Patient Consent Management**  
+**As a** Legal/Compliance Officer  
+**I want to** manage and track patient consent for data usage  
+**So that** data sharing adheres to ethical and legal requirements  
+
+**Acceptance criteria:**  
+- Consent forms are stored and retrievable  
+- Consent status is checked before data access  
+- Patients (or guardians) can revoke consent at any time  
+
+**Additional notes:**  
+- Must support GDPR’s right to erasure and withdrawal of consent  
+
+---  
+
+#### **6. US #1.6 (PROTECT-CHILD, ENG) – Clinical Decision Support**  
+**As a** Paediatric Transplant Specialist  
+**I want to** receive AI-driven risk predictions and treatment recommendations  
+**So that** I can make evidence-based decisions for my patients  
+
+**Acceptance criteria:**  
+- Models are trained on federated datasets  
+- Explanations for predictions are provided (interpretability)  
+- Recommendations align with clinical guidelines  
+
+**Additional notes:**  
+- Must be validated by medical experts before deployment  
+
+---  
+
+#### **7. US #1.7 (PROTECT-CHILD, ENG) – Audit & Compliance Reporting**  
+**As a** Data Protection Officer  
+**I want to** generate reports on data access and usage  
+**So that** I can ensure compliance with GDPR and EHDS  
+
+**Acceptance criteria:**  
+- Logs include user actions, accessed datasets, and timestamps  
+- Reports can be exported for regulatory audits  
+- Anomalies (e.g., unauthorized access attempts) trigger alerts  
+
+**Additional notes:**  
+- Reports must be tamper-proof  
+
+---  
+
+This set of user stories covers key functional aspects of PROTECT-CHILD while ensuring privacy, security, and compliance. Let me know if you'd like any refinements or additional stories!

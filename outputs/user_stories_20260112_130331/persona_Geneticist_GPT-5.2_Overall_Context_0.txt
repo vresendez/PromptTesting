@@ -1,0 +1,49 @@
+## Functional Requirements (from the provided PROTECT-CHILD summary)
+
+1. **Federated analysis capability** across hospitals, registries, and research centres (analyse distributed data without centralising raw data).
+2. **Secure integration of sensitive data types** including clinical, genomic, and registry data.
+3. **Data harmonisation and interoperability mechanisms** to align heterogeneous standards and formats (including alignment with HL7 and metadata standards).
+4. **Privacy-preserving computation** that “brings data to the analysis” and avoids exposing raw patient information.
+5. **Support for advanced analytics** including machine-learning and predictive modelling across distributed datasets.
+6. **Clinical decision support enablement** using evidence derived from multi-site data analysis.
+7. **Governance and compliance workflow support** involving legal experts, clinicians, patients, and policy makers, aligned with GDPR and EHDS.
+8. **Cross-border collaboration enablement** for analysis and reuse of rare paediatric transplant-related data under legal/ethical constraints.
+
+## Non-Functional Requirements (qualities/constraints explicitly implied in the summary)
+
+1. **Privacy preservation by design** (avoid raw data centralisation; minimise exposure of sensitive paediatric data).
+2. **Security** of the federated environment (trusted, secure infrastructure).
+3. **Legal and ethical compliance** with **GDPR** and **EHDS**; “legally compliant data infrastructure.”
+4. **Interoperability** across institutions and countries; ability to handle heterogeneous data standards/formats.
+5. **Trustworthiness** (trusted environment; governance involving stakeholders).
+6. **Scalability for Europe-wide reuse** (enable scalable reuse of rare-disease data across Europe).
+7. **Accessibility/availability for participating institutions** to support joint analysis (implied by “limited accessibility” being a problem to solve).
+8. **Maintainability/extensibility as a reference model** for future federated infrastructures (implied by “serve as a reference model”).
+
+---
+
+## User Stories (persona: Pediatric Geneticist / Clinical Genomics, supporting pediatric transplantation)
+
+1. **As a pediatric geneticist,** I want to query and analyse genomic and clinical transplant data across multiple European centres in a federated way **so that** I can learn from rare, fragmented cohorts without needing raw data to leave each institution.
+
+2. **As a pediatric geneticist,** I want the platform to integrate heterogeneous clinical, genomic, and registry datasets **so that** I can interpret patient findings using the broadest relevant evidence base available across centres.
+
+3. **As a pediatric geneticist,** I want data harmonisation that aligns participating sites to shared standards (e.g., HL7 and metadata standards) **so that** cross-site genomic–clinical analyses are comparable and not biased by formatting differences.
+
+4. **As a pediatric geneticist,** I want privacy-preserving analysis workflows that prevent exposure of identifiable/raw paediatric data **so that** I can contribute to and benefit from multi-centre studies while respecting patient privacy and sensitivity.
+
+5. **As a pediatric geneticist,** I want federated machine-learning and predictive modelling capabilities **so that** we can identify predictors of transplant success or complications using larger distributed datasets than any single centre can provide.
+
+6. **As a pediatric geneticist,** I want analytics outputs that can support clinical decision-making in transplantation **so that** I can provide more evidence-based and personalised genomic guidance for transplant planning and follow-up.
+
+7. **As a pediatric geneticist,** I want the system to support governance processes involving clinicians, legal experts, patients, and policy makers **so that** genomic data reuse for transplant-related analysis is performed under clear, agreed rules.
+
+8. **As a pediatric geneticist,** I want platform operations to be demonstrably compliant with GDPR and the European Health Data Space framework **so that** cross-border genomic data analysis is ethically and legally defensible.
+
+9. **As a pediatric geneticist,** I want to participate in cross-border analyses without centralising patient-level genomic data **so that** institutional and national constraints do not block learning from rare transplant cases.
+
+10. **As a pediatric geneticist,** I want a trusted and secure environment for collaboration across hospitals, registries, and research centres **so that** I can share and reuse insights derived from distributed data without undermining institutional trust.
+
+11. **As a pediatric geneticist,** I want the platform to improve accessibility to previously under-used multi-centre data (within the allowed governance model) **so that** rare-disease transplant genomics can be studied with sufficient cohort size and diversity.
+
+12. **As a pediatric geneticist,** I want the infrastructure to be interoperable and scalable across Europe **so that** genomic medicine knowledge generated for paediatric transplantation can be reused and extended as more centres participate.

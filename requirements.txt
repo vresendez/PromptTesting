@@ -1,0 +1,28 @@
+# Core
+python-dotenv
+pyyaml
+tqdm
+pandas
+numpy
+
+# LLM APIs
+openai
+anthropic
+google-generativeai
+transformers
+accelerate
+sentencepiece
+
+# Embeddings & NLP
+sentence-transformers
+scikit-learn
+scipy
+
+# Evaluation
+nltk
+rouge-score
+
+# Utilities
+regex
+requests
+fastapi-poe

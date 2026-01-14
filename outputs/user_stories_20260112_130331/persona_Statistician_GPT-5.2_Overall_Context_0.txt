@@ -1,0 +1,48 @@
+## Functional Requirements (from a biostatistician + clinical trials coordinator perspective)
+
+1. The platform shall support **privacy-preserving, federated analysis** across multiple hospitals/registries/research centres without centralising raw patient data.  
+2. The platform shall enable **integration of heterogeneous data types** relevant to paediatric transplantation, including **clinical, genomic, and registry data**.  
+3. The platform shall provide **data harmonisation and interoperability mechanisms** aligned with recognised standards (e.g., HL7 and metadata standards) to make cross-site analyses feasible.  
+4. The platform shall allow authorised users to run **statistical modelling, predictive modelling, and machine-learning workflows** across distributed datasets.  
+5. The platform shall support **evidence generation for clinical decision-making** by enabling analyses that identify predictors of transplant outcomes and complications (via federated methods).  
+6. The platform shall provide a way to **define, execute, and manage analysis tasks** across sites (e.g., submit an analysis request, run it at participating nodes, and collect results).  
+7. The platform shall support **secure reuse of data for research purposes** across Europe, within governance and compliance constraints.  
+8. The platform shall incorporate **governance features** to involve and reflect constraints from legal experts, clinicians, patients, and policy makers (e.g., policy-aware access and usage constraints).
+
+## Non-Functional Requirements (qualities/constraints that apply across the platform)
+
+1. The platform shall be **GDPR-aligned** and support operation within **EHDS-aligned** policy frameworks.  
+2. The platform shall be **legally compliant and ethically aligned** for cross-border paediatric health and genomic data use.  
+3. The platform shall be **privacy-preserving by design**, minimising exposure risk by avoiding raw data centralisation.  
+4. The platform shall enforce **strong security and access control** appropriate for sensitive paediatric clinical and genomic data.  
+5. The platform shall be **trusted and interoperable**, enabling collaboration across institutions with heterogeneous systems and standards.  
+6. The platform shall be **usable for multidisciplinary stakeholders** (e.g., statisticians, clinicians, coordinators, legal experts) to support correct and responsible use.  
+7. The platform shall support **responsible advanced analytics**, ensuring outputs can be used for evidence-based and personalised decisions without compromising privacy or trust.
+
+---
+
+## User Stories (numbered)
+
+1. **As a biostatistician and clinical trials coordinator, I want to submit federated analysis jobs across multiple European sites, so that I can model paediatric transplant outcomes without requesting raw patient-level data transfers.**
+
+2. **As a biostatistician, I want to combine signals from clinical, genomic, and registry data in a harmonised way, so that my models use consistent variables despite heterogeneous source systems.**
+
+3. **As a biostatistician, I want the platform to align incoming datasets to shared interoperability standards (e.g., HL7/metadata standards), so that cross-site analyses are comparable and reproducible.**
+
+4. **As a biostatistician, I want to run predictive modelling and machine-learning workflows in a privacy-preserving federated environment, so that I can develop risk stratification approaches using larger, distributed cohorts.**
+
+5. **As a clinical trials coordinator, I want to define analysis objectives (e.g., predictors of success or complications) and distribute them across participating institutions, so that evidence can be generated efficiently for rare paediatric transplant cases.**
+
+6. **As a biostatistician, I want to receive aggregated, privacy-preserving outputs from each site (rather than raw records), so that I can estimate effects and validate models while maintaining confidentiality.**
+
+7. **As a biostatistician, I want to understand which sites and datasets are eligible for a given analysis under governance constraints, so that my study plans remain feasible within legal and ethical boundaries.**
+
+8. **As a clinical trials coordinator, I want access to a trusted, legally compliant workflow for cross-border collaboration, so that study coordination does not stall due to uncertainty about GDPR/EHDS-aligned requirements.**
+
+9. **As a biostatistician, I want harmonisation checks to flag heterogeneity in data formats or definitions across institutions, so that I can prevent biased or invalid pooled/federated inference.**
+
+10. **As a biostatistician, I want to document and reuse approved analysis pipelines within the federated infrastructure, so that rare-disease evidence generation is scalable and consistent over time.**
+
+11. **As a biostatistician, I want the platform to enforce strong access control for sensitive paediatric and genomic analyses, so that only authorised stakeholders can run or view results.**
+
+12. **As a clinical trials coordinator, I want outputs that support evidence-based and personalised clinical decision-making, so that clinicians can use multi-site evidence to improve outcomes without compromising privacy or trust.**

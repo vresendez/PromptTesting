@@ -1,0 +1,52 @@
+### **User Stories for PROTECT-CHILD (Pediatric Geneticist Perspective)**  
+
+As a **Pediatric Geneticist specializing in rare pediatric genetic disorders and clinical genomics**, I need a secure, privacy-preserving, and interoperable platform to analyze distributed genomic and clinical data for pediatric transplant patients. Below are the user stories derived from the PROTECT-CHILD project requirements:  
+
+#### **Functional Requirements (What the system must do)**  
+1. **Federated Data Access**  
+   - *As a geneticist, I want to query and analyze distributed genomic and clinical datasets from multiple European hospitals without raw data centralization, so that I can maintain patient privacy while accessing larger datasets.*  
+
+2. **Genomic Data Harmonization**  
+   - *As a geneticist, I want the system to automatically align heterogeneous genomic data (e.g., WES, WGS, SNP arrays) with international standards (e.g., HL7, GA4GH), so that I can compare and integrate findings across institutions.*  
+
+3. **Privacy-Preserving Analytics**  
+   - *As a geneticist, I want to run machine-learning models (e.g., for risk stratification or variant interpretation) on federated datasets without exposing raw patient data, so that I can derive insights while complying with GDPR.*  
+
+4. **Clinical Decision Support**  
+   - *As a geneticist, I want the system to provide evidence-based recommendations (e.g., drug-gene interactions, transplant compatibility predictions) based on federated analyses, so that I can make personalized treatment decisions.*  
+
+5. **Variant Annotation & Interpretation**  
+   - *As a geneticist, I want the system to annotate and prioritize rare genetic variants from distributed genomic datasets using standardized ontologies (e.g., ClinVar, HPO), so that I can identify clinically actionable findings efficiently.*  
+
+6. **Patient Cohort Identification**  
+   - *As a geneticist, I want to define and query rare disease cohorts across European centers using federated search, so that I can study genotype-phenotype correlations in pediatric transplant patients.*  
+
+7. **Ethical & Legal Compliance Checks**  
+   - *As a geneticist, I want the system to enforce GDPR/EHDS-compliant data access controls (e.g., anonymization, consent management), so that I can ensure ethical use of sensitive pediatric data.*  
+
+#### **Non-Functional Requirements (System Qualities & Constraints)**  
+8. **Data Security & Encryption**  
+   - *As a geneticist, I need all genomic and clinical data transmissions to be end-to-end encrypted, so that patient confidentiality is never compromised.*  
+
+9. **Interoperability with EHRs & Registries**  
+   - *As a geneticist, I want the system to seamlessly integrate with hospital EHRs and transplant registries (e.g., Eurotransplant), so that I can access up-to-date patient records without manual data entry.*  
+
+10. **High Availability & Performance**  
+   - *As a geneticist, I need the system to be available with minimal downtime and fast query responses, so that I can make timely clinical decisions.*  
+
+11. **Audit Trails & Transparency**  
+   - *As a geneticist, I want all data access and analysis activities to be logged in an immutable audit trail, so that compliance with legal and ethical standards can be verified.*  
+
+12. **User-Friendly Interface for Clinicians**  
+   - *As a geneticist, I want an intuitive interface with visualizations (e.g., variant heatmaps, survival curves) and filtering options, so that I can interpret complex genomic data efficiently.*  
+
+13. **Scalability for Rare Disease Data**  
+   - *As a geneticist, I need the system to handle increasing volumes of rare pediatric genomic data without performance degradation, so that long-term research remains feasible.*  
+
+14. **Multi-Stakeholder Governance**  
+   - *As a geneticist, I want clear governance policies (e.g., data access committees, patient advocacy involvement), so that ethical concerns in pediatric data sharing are addressed.*  
+
+### **Summary**  
+These user stories reflect the needs of a **Pediatric Geneticist** working in rare disease diagnostics and transplantation genomics. The PROTECT-CHILD platform must balance **privacy, interoperability, and advanced analytics** to enable better clinical decision-making while adhering to **GDPR, EHDS, and ethical guidelines**.  
+
+Would you like any refinements based on specific clinical workflows?

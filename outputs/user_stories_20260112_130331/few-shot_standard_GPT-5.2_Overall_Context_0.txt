@@ -1,0 +1,199 @@
+1. **US #1.1 — PROTECT-CHILD Platform User Registration**  
+   **As a** PROTECT-CHILD User (clinician, data steward, researcher, legal/ethics officer)  
+   **I want** to register on the PROTECT-CHILD platform  
+   **So that** I can obtain a controlled account and role-based access to platform capabilities  
+
+   **Acceptance criteria:**  
+   - A registration interface is available (web-based or equivalent)  
+   - Required attributes are collected per user category (e.g., institution, role, purpose of use)  
+   - An approval workflow exists before activation (e.g., institutional admin + governance review)  
+   - Registration data are stored in a secure identity/access directory  
+   - Processing of personal data is GDPR-compliant and auditable  
+
+2. **US #1.2 — PROTECT-CHILD User Authentication and Login**  
+   **As a** PROTECT-CHILD User  
+   **I want** to authenticate and log in  
+   **So that** I can securely access authorised functions and data views  
+
+   **Acceptance criteria:**  
+   - A login mechanism is provided supporting strong authentication  
+   - Users receive access rights based on assigned roles (RBAC/ABAC)  
+   - Failed logins and suspicious activity are logged and monitored  
+   - Authentication flows support institutional policies (e.g., SSO where applicable)  
+   - Personal data processed during authentication is handled under GDPR  
+
+3. **US #1.3 — Role and Permission Management**  
+   **As an** Access Administrator  
+   **I want** to assign and manage user roles and permissions  
+   **So that** access to tools, datasets, and actions is controlled and policy-compliant  
+
+   **Acceptance criteria:**  
+   - Roles exist for key categories (clinician, researcher, data manager/steward, legal/ethics, system admin)  
+   - Permissions are enforced consistently across UI, APIs, and computation services  
+   - Role changes take effect without compromising auditability  
+   - Permission assignments are logged with who/when/why metadata  
+
+4. **US #2.1 — Data Source Onboarding (Hospital/Registry/Research Centre)**  
+   **As a** Data Manager at a participating organisation  
+   **I want** to onboard my organisation as a data provider node  
+   **So that** our clinical/genomic/registry data can participate in federated analyses without centralising raw data  
+
+   **Acceptance criteria:**  
+   - A guided onboarding workflow captures organisation metadata and contacts  
+   - Technical prerequisites for a node are validated (connectivity, certificates, minimal security baseline)  
+   - Governance prerequisites are captured (DPIA status, DTA/DPA references, approvals)  
+   - Node status (pending/active/suspended) is visible to authorised admins  
+
+5. **US #2.2 — Clinical Data Ingestion and Local Harmonisation**  
+   **As a** Data Manager at a data provider node  
+   **I want** to ingest local clinical transplant data into the PROTECT-CHILD local environment in a harmonised form  
+   **So that** our data can be queried and analysed consistently across sites  
+
+   **Acceptance criteria:**  
+   - Supported input formats and mappings are documented (e.g., HL7/FHIR, CSV/Excel extracts, registry exports)  
+   - Ingested data are transformed into an agreed common data model/profile (project-defined)  
+   - Validation rules identify missing/invalid fields and produce an actionable report  
+   - Ingestion runs are reproducible and versioned (pipeline version + timestamp + operator)  
+
+6. **US #2.3 — Genomic Data Ingestion and Local Harmonisation**  
+   **As a** Data Manager / Bioinformatics Data Steward  
+   **I want** to ingest genomic data (and metadata) into the local node using project conventions  
+   **So that** genomic variables can be used in privacy-preserving analyses alongside clinical data  
+
+   **Acceptance criteria:**  
+   - Genomic data ingestion supports agreed formats (e.g., variant/sequence-derived summaries + metadata)  
+   - Genomic data elements are linked to the correct subject/pseudonym and sample metadata  
+   - Data quality checks detect inconsistencies (e.g., invalid identifiers, missing metadata)  
+   - Genomic ingestion is logged and traceable to source and pipeline version  
+
+7. **US #2.4 — Metadata Catalogue and Dataset Discovery (Federated)**  
+   **As a** Researcher or Clinician  
+   **I want** to discover what datasets/variables exist across participating nodes without viewing raw data  
+   **So that** I can assess feasibility and design analyses responsibly  
+
+   **Acceptance criteria:**  
+   - A searchable catalogue provides dataset-level metadata (site, cohort size ranges, variable availability)  
+   - Discovery supports filtering by transplant type, age ranges, time periods, and variable groups  
+   - Only privacy-preserving aggregates/metadata are shown (no direct identifiers, no row-level data)  
+   - Access to sensitive metadata is permission-controlled and logged  
+
+8. **US #2.5 — Data Standard Alignment and Interoperability Rules Management**  
+   **As a** Interoperability Lead / Data Steward  
+   **I want** to manage mappings and interoperability rules to international standards (e.g., HL7/FHIR and relevant metadata standards)  
+   **So that** data from heterogeneous sources remain comparable and reusable  
+
+   **Acceptance criteria:**  
+   - The system supports storing and versioning mapping specifications and value set bindings  
+   - Sites can view the current “approved” harmonisation rules and their change history  
+   - Changes to rules trigger impact notes (e.g., which variables/pipelines are affected)  
+   - Conformance checks can be run locally to verify compliance  
+
+9. **US #3.1 — Federated Analysis Request Submission**  
+   **As a** Researcher or Clinician  
+   **I want** to submit a federated analysis request (e.g., cohort selection + model/algorithm)  
+   **So that** distributed data can be analysed without exporting raw patient data  
+
+   **Acceptance criteria:**  
+   - The request captures purpose, protocol reference, variables, cohort criteria, and intended outputs  
+   - The request supports selecting target nodes or eligible nodes based on availability  
+   - The system validates the request for completeness and policy constraints before submission  
+   - A unique request ID is issued and status is trackable end-to-end  
+
+10. **US #3.2 — Governance Review and Approval of Analysis Requests**  
+   **As a** Governance Officer (legal/ethics/data access committee member)  
+   **I want** to review and approve/deny analysis requests  
+   **So that** all data use is compliant with GDPR, EHDS alignment goals, and ethical constraints  
+
+   **Acceptance criteria:**  
+   - Requests are queued with all necessary documentation (purpose, lawful basis, approvals, minimisation)  
+   - Review outcomes include approve/deny/needs-changes with rationale  
+   - Approvals can be scoped (time-limited, node-limited, variable-limited, output-limited)  
+   - All decisions are logged for audit and reporting  
+
+11. **US #3.3 — Privacy-Preserving Execution of Federated Analytics**  
+   **As a** Platform Operator / Node Operator  
+   **I want** approved analyses to execute in a privacy-preserving federated manner  
+   **So that** results can be computed without centralising or exposing raw sensitive data  
+
+   **Acceptance criteria:**  
+   - Only approved code/containers/workflows can be dispatched to nodes (controlled execution)  
+   - Nodes execute locally and return only permitted outputs (e.g., model updates, aggregates)  
+   - The system prevents export of row-level data unless explicitly authorised and justified  
+   - Execution logs include provenance: code version, node participation, timestamps, success/failure  
+
+12. **US #3.4 — Result Aggregation and Secure Delivery**  
+   **As a** Researcher or Clinician  
+   **I want** federated results to be aggregated and delivered securely  
+   **So that** I can interpret findings for research or clinical decision support  
+
+   **Acceptance criteria:**  
+   - Results are presented/downloadable only to authorised users tied to the approved request  
+   - Outputs follow predefined privacy constraints (e.g., suppression of small counts)  
+   - Results include provenance and interpretability metadata (variables used, cohorts, node participation)  
+   - Result access is logged and time-bound where required  
+
+13. **US #3.5 — Clinical Decision Support (CDS) Insight View**  
+   **As a** Clinician treating paediatric transplant patients  
+   **I want** to view clinically relevant predictive insights derived from federated analyses  
+   **So that** I can support evidence-based and personalised care decisions  
+
+   **Acceptance criteria:**  
+   - CDS views expose only clinically meaningful outputs (risk scores/stratification/feature importance as allowed)  
+   - The UI clearly communicates model limitations, cohort context, and uncertainty  
+   - Access is restricted to clinical roles and appropriate purposes of use  
+   - CDS outputs are traceable to an approved analysis and model version  
+
+14. **US #4.1 — Audit Logging and Traceability**  
+   **As a** Compliance Officer / Security Officer  
+   **I want** complete audit logs of access, actions, and processing events  
+   **So that** I can demonstrate compliance and investigate incidents  
+
+   **Acceptance criteria:**  
+   - All security-relevant events are logged (login, data access, analysis submission, approvals, execution, downloads)  
+   - Logs are tamper-evident and retained according to policy  
+   - Audit trails can be searched and exported by authorised personnel  
+   - Audit records include actor, timestamp, action, scope, and outcome  
+
+15. **US #4.2 — Consent/Legal Basis and Purpose Limitation Controls**  
+   **As a** Data Protection Officer / Governance Officer  
+   **I want** data use to be bound to an explicit legal basis and purpose  
+   **So that** processing complies with GDPR principles (lawfulness, minimisation, purpose limitation)  
+
+   **Acceptance criteria:**  
+   - Each dataset/node declares permitted purposes and constraints  
+   - Each analysis request declares purpose and legal basis references  
+   - The system enforces purpose-based access controls and blocks incompatible uses  
+   - Compliance evidence is recorded alongside requests and outputs  
+
+16. **US #4.3 — Security Baseline for Nodes and Communications**  
+   **As a** Security Administrator  
+   **I want** secure communications and a minimum security baseline across all nodes  
+   **So that** cross-border collaboration does not increase security risk  
+
+   **Acceptance criteria:**  
+   - All inter-node communication is encrypted and mutually authenticated  
+   - Node identities and certificates/keys are managed and renewable  
+   - Security posture checks exist (e.g., allowed software versions, patch levels, configuration checks where feasible)  
+   - Nodes can be suspended/revoked if non-compliant or compromised  
+
+17. **US #4.4 — Data Minimisation and Output Disclosure Controls**  
+   **As a** Governance Officer  
+   **I want** controls that minimise data exposure and prevent disallowed disclosures  
+   **So that** outputs do not re-identify patients or leak sensitive information  
+
+   **Acceptance criteria:**  
+   - Configurable rules exist for minimum cohort sizes and suppression thresholds  
+   - Outputs are automatically checked against disclosure policies before release  
+   - Attempts to request disallowed outputs are blocked and logged  
+   - Exceptions require explicit approval and justification workflow  
+
+18. **US #5.1 — Stakeholder Collaboration and Co-Design Feedback Capture**  
+   **As a** Project Stakeholder (clinician, patient representative, policymaker, legal expert)  
+   **I want** to provide structured feedback on platform workflows and governance rules  
+   **So that** the system evolves in a trusted, user-centred, and compliant way  
+
+   **Acceptance criteria:**  
+   - Feedback can be submitted against specific features/processes (onboarding, access, analysis, CDS)  
+   - Feedback items have status tracking (received/triaged/accepted/rejected/implemented)  
+   - Sensitive feedback is access-controlled  
+   - A change log links implemented changes to feedback items where applicable
